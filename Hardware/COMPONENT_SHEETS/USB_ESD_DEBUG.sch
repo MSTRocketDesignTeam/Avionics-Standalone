@@ -14,10 +14,10 @@ Comment3 "Schematic depicting logical connections between components"
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J5
+L Connector:USB_B_Micro J4
 U 1 1 61A3682F
 P 2500 3450
-F 0 "J5" H 2564 4195 60  0000 C CNN
+F 0 "J4" H 2564 4195 60  0000 C CNN
 F 1 "10118192-0001LF" H 2564 4089 60  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 2700 3650 60  0001 L CNN
 F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118192.pdf" H 2700 3750 60  0001 L CNN
@@ -272,10 +272,10 @@ $EndComp
 NoConn ~ 2400 3850
 NoConn ~ 2800 3650
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J6
+L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 61C04627
 P 2700 6250
-F 0 "J6" H 2750 6667 50  0000 C CNN
+F 0 "J5" H 2750 6667 50  0000 C CNN
 F 1 "ARM 10 Pin" H 2750 6576 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2700 6250 50  0001 C CNN
 F 3 "~" H 2700 6250 50  0001 C CNN

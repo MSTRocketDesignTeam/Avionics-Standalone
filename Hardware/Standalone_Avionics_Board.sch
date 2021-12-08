@@ -323,10 +323,10 @@ F 3 "" H 8300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J4
+L Connector:Conn_Coaxial J3
 U 1 1 61B4987D
 P 8300 1700
-F 0 "J4" H 8400 1675 50  0000 L CNN
+F 0 "J3" H 8400 1675 50  0000 L CNN
 F 1 "RF_Ant" H 8400 1584 50  0000 L CNN
 F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 8300 1700 50  0001 C CNN
 F 3 " ~" H 8300 1700 50  0001 C CNN
@@ -434,32 +434,6 @@ F4 "NRST" I L 3500 7200 50
 F5 "SWCLK" I L 3500 7350 50 
 F6 "SWDIO" I L 3500 7500 50 
 $EndSheet
-$Comp
-L Connector:Screw_Terminal_01x04 J?
-U 1 1 61DE5119
-P 7250 4150
-AR Path="/61C104EE/61DE5119" Ref="J?"  Part="1" 
-AR Path="/61DE5119" Ref="J2"  Part="1" 
-F 0 "J2" H 7330 4142 50  0000 L CNN
-F 1 "Charges A/B Terminal" H 7330 4051 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7250 4150 50  0001 C CNN
-F 3 "~" H 7250 4150 50  0001 C CNN
-	1    7250 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x04 J?
-U 1 1 61DE7D04
-P 7250 4750
-AR Path="/61C104EE/61DE7D04" Ref="J?"  Part="1" 
-AR Path="/61DE7D04" Ref="J3"  Part="1" 
-F 0 "J3" H 7330 4742 50  0000 L CNN
-F 1 "Charges C/D Terminal" H 7330 4651 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7250 4750 50  0001 C CNN
-F 3 "~" H 7250 4750 50  0001 C CNN
-	1    7250 4750
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	2150 4450 2250 4550
 Entry Wire Line
@@ -561,44 +535,6 @@ Wire Bus Line
 Wire Bus Line
 	4500 4550 2250 4550
 $Sheet
-S 5950 3950 800  1250
-U 61C104EE
-F0 "Charges Firing Circuits" 50
-F1 "COMPONENT_SHEETS/FIRING_CIRCUITS.sch" 50
-F2 "Fire_A" I L 5950 4050 50 
-F3 "Fire_B" I L 5950 4200 50 
-F4 "Fire_C" I L 5950 4350 50 
-F5 "Fire_D" I L 5950 4500 50 
-F6 "Sense_A" I L 5950 4650 50 
-F7 "Sense_B" I L 5950 4800 50 
-F8 "Sense_C" I L 5950 4950 50 
-F9 "Sense_D" I L 5950 5100 50 
-F10 "Fet_A+" I R 6750 4050 50 
-F11 "Fet_B+" I R 6750 4250 50 
-F12 "Fet_C+" I R 6750 4650 50 
-F13 "Fet_D+" I R 6750 4850 50 
-F14 "Fet_A-" I R 6750 4150 50 
-F15 "Fet_B-" I R 6750 4350 50 
-F16 "Fet_C-" I R 6750 4750 50 
-F17 "Fet_D-" I R 6750 4950 50 
-$EndSheet
-Wire Wire Line
-	6750 4050 7050 4050
-Wire Wire Line
-	6750 4950 7050 4950
-Wire Wire Line
-	7050 4850 6750 4850
-Wire Wire Line
-	6750 4750 7050 4750
-Wire Wire Line
-	7050 4650 6750 4650
-Wire Wire Line
-	6750 4350 7050 4350
-Wire Wire Line
-	7050 4250 6750 4250
-Wire Wire Line
-	6750 4150 7050 4150
-$Sheet
 S 600  600  1200 7000
 U 61B0FD2E
 F0 "STM32L562VET6Q" 50
@@ -650,6 +586,55 @@ F3 "DI" I L 3500 5050 50
 F4 "DO" O L 3500 5200 50 
 F5 "~CS" I L 3500 5350 50 
 $EndSheet
+$Comp
+L Connector:Screw_Terminal_01x08 J2
+U 1 1 61EBDC84
+P 7450 4450
+F 0 "J2" H 7530 4442 50  0000 L CNN
+F 1 "Charges Terminal Block" H 7530 4351 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 7450 4450 50  0001 C CNN
+F 3 "~" H 7450 4450 50  0001 C CNN
+	1    7450 4450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5950 3950 800  1250
+U 61C104EE
+F0 "Charges Firing Circuits" 50
+F1 "COMPONENT_SHEETS/FIRING_CIRCUITS.sch" 50
+F2 "Fire_A" I L 5950 4050 50 
+F3 "Fire_B" I L 5950 4200 50 
+F4 "Fire_C" I L 5950 4350 50 
+F5 "Fire_D" I L 5950 4500 50 
+F6 "Sense_A" I L 5950 4650 50 
+F7 "Sense_B" I L 5950 4800 50 
+F8 "Sense_C" I L 5950 4950 50 
+F9 "Sense_D" I L 5950 5100 50 
+F10 "Fet_A+" I R 6750 4150 50 
+F11 "Fet_B+" I R 6750 4350 50 
+F12 "Fet_C+" I R 6750 4550 50 
+F13 "Fet_D+" I R 6750 4750 50 
+F14 "Fet_A-" I R 6750 4250 50 
+F15 "Fet_B-" I R 6750 4450 50 
+F16 "Fet_C-" I R 6750 4650 50 
+F17 "Fet_D-" I R 6750 4850 50 
+$EndSheet
+Wire Wire Line
+	6750 4150 7250 4150
+Wire Wire Line
+	7250 4250 6750 4250
+Wire Wire Line
+	6750 4350 7250 4350
+Wire Wire Line
+	7250 4450 6750 4450
+Wire Wire Line
+	6750 4550 7250 4550
+Wire Wire Line
+	7250 4650 6750 4650
+Wire Wire Line
+	6750 4750 7250 4750
+Wire Wire Line
+	7250 4850 6750 4850
 Wire Bus Line
 	2600 2900 2600 3800
 Wire Bus Line
