@@ -14,21 +14,21 @@ Comment3 "Schematic depicting logical connections between components"
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J1
 U 1 1 61B49554
 P 4800 6100
-F 0 "J?" H 4900 6075 50  0000 L CNN
+F 0 "J1" H 4900 6075 50  0000 L CNN
 F 1 "GPS_Ant" H 4900 5984 50  0000 L CNN
-F 2 "" H 4800 6100 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 4800 6100 50  0001 C CNN
 F 3 " ~" H 4800 6100 50  0001 C CNN
 	1    4800 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 61B49D74
 P 4800 6300
-F 0 "#PWR?" H 4800 6050 50  0001 C CNN
+F 0 "#PWR01" H 4800 6050 50  0001 C CNN
 F 1 "GND" H 4805 6127 50  0000 C CNN
 F 2 "" H 4800 6300 50  0001 C CNN
 F 3 "" H 4800 6300 50  0001 C CNN
@@ -312,10 +312,10 @@ $EndSheet
 Wire Wire Line
 	4250 6100 4600 6100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 61B49CC6
 P 8300 1900
-F 0 "#PWR?" H 8300 1650 50  0001 C CNN
+F 0 "#PWR02" H 8300 1650 50  0001 C CNN
 F 1 "GND" H 8305 1727 50  0000 C CNN
 F 2 "" H 8300 1900 50  0001 C CNN
 F 3 "" H 8300 1900 50  0001 C CNN
@@ -323,12 +323,12 @@ F 3 "" H 8300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J?
+L Connector:Conn_Coaxial J4
 U 1 1 61B4987D
 P 8300 1700
-F 0 "J?" H 8400 1675 50  0000 L CNN
+F 0 "J4" H 8400 1675 50  0000 L CNN
 F 1 "RF_Ant" H 8400 1584 50  0000 L CNN
-F 2 "" H 8300 1700 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 8300 1700 50  0001 C CNN
 F 3 " ~" H 8300 1700 50  0001 C CNN
 	1    8300 1700
 	1    0    0    -1  
@@ -439,10 +439,10 @@ L Connector:Screw_Terminal_01x04 J?
 U 1 1 61DE5119
 P 7250 4150
 AR Path="/61C104EE/61DE5119" Ref="J?"  Part="1" 
-AR Path="/61DE5119" Ref="J?"  Part="1" 
-F 0 "J?" H 7330 4142 50  0000 L CNN
+AR Path="/61DE5119" Ref="J2"  Part="1" 
+F 0 "J2" H 7330 4142 50  0000 L CNN
 F 1 "Charges A/B Terminal" H 7330 4051 50  0000 L CNN
-F 2 "" H 7250 4150 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7250 4150 50  0001 C CNN
 F 3 "~" H 7250 4150 50  0001 C CNN
 	1    7250 4150
 	1    0    0    -1  
@@ -452,10 +452,10 @@ L Connector:Screw_Terminal_01x04 J?
 U 1 1 61DE7D04
 P 7250 4750
 AR Path="/61C104EE/61DE7D04" Ref="J?"  Part="1" 
-AR Path="/61DE7D04" Ref="J?"  Part="1" 
-F 0 "J?" H 7330 4742 50  0000 L CNN
+AR Path="/61DE7D04" Ref="J3"  Part="1" 
+F 0 "J3" H 7330 4742 50  0000 L CNN
 F 1 "Charges C/D Terminal" H 7330 4651 50  0000 L CNN
-F 2 "" H 7250 4750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7250 4750 50  0001 C CNN
 F 3 "~" H 7250 4750 50  0001 C CNN
 	1    7250 4750
 	1    0    0    -1  
@@ -629,15 +629,14 @@ F24 "USART2_RX" I R 1800 5750 50
 F25 "USART2_TX" I R 1800 5900 50 
 F26 "GPIO_PA8" I R 1800 6050 50 
 F27 "DEBUG_NRST" I R 1800 7200 50 
-F28 "I2C1_EN" I L 600 3450 50 
-F29 "Fire_A" I R 1800 3400 50 
-F30 "Fire_B" I R 1800 3550 50 
-F31 "Fire_C" I R 1800 3700 50 
-F32 "Fire_D" I R 1800 3850 50 
-F33 "Sense_A" I R 1800 4000 50 
-F34 "Sense_B" I R 1800 4150 50 
-F35 "Sense_C" I R 1800 4300 50 
-F36 "Sense_D" I R 1800 4450 50 
+F28 "Fire_A" I R 1800 3400 50 
+F29 "Fire_B" I R 1800 3550 50 
+F30 "Fire_C" I R 1800 3700 50 
+F31 "Fire_D" I R 1800 3850 50 
+F32 "Sense_A" I R 1800 4000 50 
+F33 "Sense_B" I R 1800 4150 50 
+F34 "Sense_C" I R 1800 4300 50 
+F35 "Sense_D" I R 1800 4450 50 
 $EndSheet
 Wire Bus Line
 	4500 4550 4500 5200

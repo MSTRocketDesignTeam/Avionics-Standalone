@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 14
+Sheet 6 14
 Title "Standalone Avionics PCB Schematic"
 Date "2021-12-08"
 Rev "v1.0.4"
@@ -18,9 +18,9 @@ L Sensor_Pressure:MS5607-02BA U?
 U 1 1 6161026E
 P 5900 3650
 AR Path="/6161026E" Ref="U?"  Part="1" 
-AR Path="/615B3F6F/6161026E" Ref="U7"  Part="1" 
-AR Path="/61B1233F/6161026E" Ref="U?"  Part="1" 
-F 0 "U?" H 5850 4450 50  0000 L CNN
+AR Path="/615B3F6F/6161026E" Ref="U?"  Part="1" 
+AR Path="/61B1233F/6161026E" Ref="U5"  Part="1" 
+F 0 "U5" H 5850 4450 50  0000 L CNN
 F 1 "MS5607-02BA" H 5600 4350 50  0000 L CNN
 F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 5900 3650 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035" H 5900 3650 50  0001 C CNN
@@ -38,11 +38,11 @@ L Device:C_Small C?
 U 1 1 61610282
 P 6350 3650
 AR Path="/61610282" Ref="C?"  Part="1" 
-AR Path="/615B3F6F/61610282" Ref="C18"  Part="1" 
-AR Path="/61B1233F/61610282" Ref="C?"  Part="1" 
-F 0 "C?" H 6465 3696 50  0000 L CNN
+AR Path="/615B3F6F/61610282" Ref="C?"  Part="1" 
+AR Path="/61B1233F/61610282" Ref="C17"  Part="1" 
+F 0 "C17" H 6465 3696 50  0000 L CNN
 F 1 "100nF" H 6465 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6388 3500 50  0001 C CNN
 F 3 "~" H 6350 3650 50  0001 C CNN
 	1    6350 3650
 	1    0    0    -1  
@@ -82,10 +82,10 @@ Wire Notes Line
 Text Notes 5450 4900 0    50   ~ 0
 Pressure range should be \nsufficientfor ~ 100,000 feet.
 $Comp
-L power:+3.3V #PWR0117
+L power:+3.3V #PWR026
 U 1 1 61B281DA
 P 6350 3150
-F 0 "#PWR0117" H 6350 3000 50  0001 C CNN
+F 0 "#PWR026" H 6350 3000 50  0001 C CNN
 F 1 "+3.3V" H 6365 3323 50  0000 C CNN
 F 2 "" H 6350 3150 50  0001 C CNN
 F 3 "" H 6350 3150 50  0001 C CNN
@@ -93,10 +93,10 @@ F 3 "" H 6350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0118
+L power:GND #PWR025
 U 1 1 61B289B5
 P 5900 4150
-F 0 "#PWR0118" H 5900 3900 50  0001 C CNN
+F 0 "#PWR025" H 5900 3900 50  0001 C CNN
 F 1 "GND" H 5905 3977 50  0000 C CNN
 F 2 "" H 5900 4150 50  0001 C CNN
 F 3 "" H 5900 4150 50  0001 C CNN
