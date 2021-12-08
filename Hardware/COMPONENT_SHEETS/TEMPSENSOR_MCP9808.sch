@@ -56,7 +56,7 @@ AR Path="/615C1FB4/6160E30B" Ref="U?"  Part="1"
 AR Path="/61B12284/6160E30B" Ref="U8"  Part="1" 
 F 0 "U8" H 5450 4300 50  0000 L CNN
 F 1 "MCP9808_MSOP" H 5200 4200 50  0000 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5500 3550 50  0001 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm" H 5500 3550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf" H 5250 4000 50  0001 C CNN
 	1    5500 3550
 	1    0    0    -1  
