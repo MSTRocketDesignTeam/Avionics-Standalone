@@ -250,7 +250,7 @@ Text Notes 10250 3550 2    50   ~ 0
 0x1E
 Text Notes 8200 3550 2    50   ~ 0
 0x77
-Text Notes 6000 3550 2    50   ~ 0
+Text Notes 6050 3550 2    50   ~ 0
 0x18
 Text Notes 4250 3550 2    50   ~ 0
 0x28
@@ -635,6 +635,52 @@ Wire Wire Line
 	6750 4750 7250 4750
 Wire Wire Line
 	7250 4850 6750 4850
+$Comp
+L power:+3.3V #PWR086
+U 1 1 61B21EEA
+P 9750 4900
+F 0 "#PWR086" H 9750 4750 50  0001 C CNN
+F 1 "+3.3V" H 9765 5073 50  0000 C CNN
+F 2 "" H 9750 4900 50  0001 C CNN
+F 3 "" H 9750 4900 50  0001 C CNN
+	1    9750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR087
+U 1 1 61B228F3
+P 9750 5100
+F 0 "#PWR087" H 9750 4850 50  0001 C CNN
+F 1 "GND" H 9755 4927 50  0000 C CNN
+F 2 "" H 9750 5100 50  0001 C CNN
+F 3 "" H 9750 5100 50  0001 C CNN
+	1    9750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 61B22E7C
+P 9950 5000
+F 0 "J6" H 10030 5042 50  0000 L CNN
+F 1 "3-Pin Molex Power" H 10030 4951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 9950 5000 50  0001 C CNN
+F 3 "~" H 9950 5000 50  0001 C CNN
+	1    9950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR085
+U 1 1 61B248E6
+P 9600 5000
+F 0 "#PWR085" H 9600 4850 50  0001 C CNN
+F 1 "+5V" H 9615 5173 50  0000 C CNN
+F 2 "" H 9600 5000 50  0001 C CNN
+F 3 "" H 9600 5000 50  0001 C CNN
+	1    9600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5000 9600 5000
 Wire Bus Line
 	2600 2900 2600 3800
 Wire Bus Line
