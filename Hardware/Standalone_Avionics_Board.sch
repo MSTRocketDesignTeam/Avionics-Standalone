@@ -323,10 +323,10 @@ F 3 "" H 8300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J3
+L Connector:Conn_Coaxial J4
 U 1 1 61B4987D
 P 8300 1700
-F 0 "J3" H 8400 1675 50  0000 L CNN
+F 0 "J4" H 8400 1675 50  0000 L CNN
 F 1 "RF_Ant" H 8400 1584 50  0000 L CNN
 F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 8300 1700 50  0001 C CNN
 F 3 " ~" H 8300 1700 50  0001 C CNN
@@ -586,17 +586,6 @@ F3 "DI" I L 3500 5050 50
 F4 "DO" O L 3500 5200 50 
 F5 "~CS" I L 3500 5350 50 
 $EndSheet
-$Comp
-L Connector:Screw_Terminal_01x08 J2
-U 1 1 61EBDC84
-P 7450 4450
-F 0 "J2" H 7530 4442 50  0000 L CNN
-F 1 "Charges Terminal Block" H 7530 4351 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal" H 7450 4450 50  0001 C CNN
-F 3 "~" H 7450 4450 50  0001 C CNN
-	1    7450 4450
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 5950 3950 800  1250
 U 61C104EE
@@ -636,10 +625,10 @@ Wire Wire Line
 Wire Wire Line
 	7250 4850 6750 4850
 $Comp
-L power:+3.3V #PWR086
+L power:+3.3V #PWR04
 U 1 1 61B21EEA
 P 9750 4900
-F 0 "#PWR086" H 9750 4750 50  0001 C CNN
+F 0 "#PWR04" H 9750 4750 50  0001 C CNN
 F 1 "+3.3V" H 9765 5073 50  0000 C CNN
 F 2 "" H 9750 4900 50  0001 C CNN
 F 3 "" H 9750 4900 50  0001 C CNN
@@ -647,10 +636,10 @@ F 3 "" H 9750 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR087
+L power:GND #PWR05
 U 1 1 61B228F3
 P 9750 5100
-F 0 "#PWR087" H 9750 4850 50  0001 C CNN
+F 0 "#PWR05" H 9750 4850 50  0001 C CNN
 F 1 "GND" H 9755 4927 50  0000 C CNN
 F 2 "" H 9750 5100 50  0001 C CNN
 F 3 "" H 9750 5100 50  0001 C CNN
@@ -658,10 +647,10 @@ F 3 "" H 9750 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J6
+L Connector_Generic:Conn_01x03 J5
 U 1 1 61B22E7C
 P 9950 5000
-F 0 "J6" H 10030 5042 50  0000 L CNN
+F 0 "J5" H 10030 5042 50  0000 L CNN
 F 1 "3-Pin Molex Power" H 10030 4951 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 9950 5000 50  0001 C CNN
 F 3 "~" H 9950 5000 50  0001 C CNN
@@ -669,10 +658,10 @@ F 3 "~" H 9950 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR085
+L power:+5V #PWR03
 U 1 1 61B248E6
 P 9600 5000
-F 0 "#PWR085" H 9600 4850 50  0001 C CNN
+F 0 "#PWR03" H 9600 4850 50  0001 C CNN
 F 1 "+5V" H 9615 5173 50  0000 C CNN
 F 2 "" H 9600 5000 50  0001 C CNN
 F 3 "" H 9600 5000 50  0001 C CNN
@@ -697,4 +686,26 @@ Wire Bus Line
 	5500 4150 5500 5200
 Wire Bus Line
 	2600 3800 8800 3800
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 61B3C495
+P 7450 4250
+F 0 "J2" H 7530 4242 50  0000 L CNN
+F 1 "Charges A/B Terminal" H 7530 4151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7450 4250 50  0001 C CNN
+F 3 "~" H 7450 4250 50  0001 C CNN
+	1    7450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J3
+U 1 1 61B3D949
+P 7450 4650
+F 0 "J3" H 7530 4642 50  0000 L CNN
+F 1 "Charges C/D Terminal" H 7530 4551 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 7450 4650 50  0001 C CNN
+F 3 "~" H 7450 4650 50  0001 C CNN
+	1    7450 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
