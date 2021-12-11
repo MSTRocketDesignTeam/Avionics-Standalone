@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 14
+Sheet 13 14
 Title "Standalone Avionics PCB Schematic"
 Date "2021-12-08"
 Rev "v1.0.4"
